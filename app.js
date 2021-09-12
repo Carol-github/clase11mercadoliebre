@@ -4,7 +4,7 @@ let path = require ("path");
 
 server.use(express.static("public"));
 
-server.listen(3030,()=>{
+server.listen(process.env.PORT||3030,()=>{
     console.log("http://localhost:3030")
 });
 
